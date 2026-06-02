@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac Toe | Sloane's Art Studio</title>
+    <meta
+      name="description"
+      content="Play tic tac toe on Sloane's Art Studio."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="game-page">
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="index.html" aria-label="Sloane's Art Studio home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Sloane's Art Studio</span>
+      </a>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="index.html#gallery">Gallery</a>
+        <a href="tictactoe.html" aria-current="page">Game</a>
+        <a href="index.html#artist-note">Artist Note</a>
+      </nav>
+    </header>
+
+    <main class="game-shell">
+      <section class="game-board-section" aria-labelledby="game-title">
+        <div class="game-copy">
+          <p class="eyebrow">Play on the site</p>
+          <h1 id="game-title">Tic Tac Toe</h1>
+          <p class="intro">
+            Choose a mode, take a square, and try to make three in a row.
+          </p>
+        </div>
+
+        <div class="game-layout">
+          <section class="game-panel" aria-label="Tic tac toe board">
+            <div class="game-status-row">
+              <p class="turn-label" data-game-status>X goes first.</p>
+              <button class="button secondary compact-button" type="button" data-reset-board>
+                New board
+              </button>
+            </div>
+
+            <div class="tic-board" role="grid" aria-label="Tic tac toe board">
+              <button class="tic-cell" type="button" role="gridcell" data-cell="0" aria-label="Top left"></button>
+              <button class="tic-cell" type="button" role="gridcell" data-cell="1" aria-label="Top middle"></button>
+              <button class="tic-cell" type="button" role="gridcell" data-cell="2" aria-label="Top right"></button>
+              <button class="tic-cell" type="button" role="gridcell" data-cell="3" aria-label="Middle left"></button>
+              <button class="tic-cell" type="button" role="gridcell" data-cell="4" aria-label="Center"></button>
+              <button class="tic-cell" type="button" role="gridcell" data-cell="5" aria-label="Middle right"></button>
+              <button class="tic-cell" type="button" role="gridcell" data-cell="6" aria-label="Bottom left"></button>
+              <button class="tic-cell" type="button" role="gridcell" data-cell="7" aria-label="Bottom middle"></button>
+              <button class="tic-cell" type="button" role="gridcell" data-cell="8" aria-label="Bottom right"></button>
+            </div>
+          </section>
+
+          <aside class="game-controls" aria-label="Game controls">
+            <div>
+              <p class="control-label">Mode</p>
+              <div class="mode-toggle" role="tablist" aria-label="Choose game mode">
+                <button class="mode-button active" type="button" role="tab" aria-selected="true" data-mode="friend">
+                  2 players
+                </button>
+                <button class="mode-button" type="button" role="tab" aria-selected="false" data-mode="computer">
+                  vs computer
+                </button>
+              </div>
+            </div>
+
+            <div class="scoreboard" aria-label="Scoreboard">
+              <div class="score-tile">
+                <span>X</span>
+                <strong data-score-x>0</strong>
+              </div>
+              <div class="score-tile">
+                <span>Draw</span>
+                <strong data-score-draw>0</strong>
+              </div>
+              <div class="score-tile">
+                <span>O</span>
+                <strong data-score-o>0</strong>
+              </div>
+            </div>
+
+            <button class="button primary full-button" type="button" data-reset-score>
+              Reset score
+            </button>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script src="tictactoe.js"></script>
+  </body>
+</html>
