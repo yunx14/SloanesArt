@@ -99,6 +99,10 @@ button {
   color: var(--rose);
 }
 
+.site-nav a[aria-current="page"] {
+  color: var(--rose);
+}
+
 .hero {
   min-height: min(720px, calc(100vh - 68px));
   display: flex;
@@ -341,6 +345,171 @@ h1 {
   margin: 0;
 }
 
+.game-page {
+  min-height: 100vh;
+}
+
+.game-shell {
+  padding: clamp(32px, 6vw, 72px) clamp(18px, 5vw, 64px);
+}
+
+.game-board-section {
+  display: grid;
+  gap: clamp(28px, 5vw, 56px);
+}
+
+.game-copy {
+  max-width: 820px;
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(260px, 360px);
+  gap: clamp(18px, 4vw, 34px);
+  align-items: start;
+}
+
+.game-panel,
+.game-controls,
+.score-tile {
+  background: var(--surface);
+  border: 2px solid var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.game-panel,
+.game-controls {
+  padding: clamp(16px, 3vw, 24px);
+}
+
+.game-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.turn-label {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 900;
+}
+
+.compact-button {
+  min-height: 40px;
+  padding: 8px 14px;
+}
+
+.tic-board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(76px, 1fr));
+  width: min(100%, 620px);
+  aspect-ratio: 1;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+  gap: 2px;
+}
+
+.tic-cell {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 0;
+  border: 0;
+  background: #fff7e8;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: clamp(3rem, 12vw, 7rem);
+  font-weight: 950;
+  line-height: 1;
+}
+
+.tic-cell:hover,
+.tic-cell:focus-visible {
+  background: #f7e8c9;
+}
+
+.tic-cell:disabled {
+  cursor: default;
+}
+
+.tic-cell.marked-x {
+  color: var(--rose);
+}
+
+.tic-cell.marked-o {
+  color: var(--teal);
+}
+
+.tic-cell.winner {
+  background: var(--gold);
+}
+
+.game-controls {
+  display: grid;
+  gap: 24px;
+}
+
+.control-label {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.mode-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+  gap: 2px;
+}
+
+.mode-button {
+  min-height: 44px;
+  border: 0;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.mode-button.active {
+  background: var(--rose);
+  color: #fff;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.score-tile {
+  display: grid;
+  min-height: 94px;
+  place-items: center;
+  padding: 12px;
+  text-align: center;
+}
+
+.score-tile span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.score-tile strong {
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.full-button {
+  width: 100%;
+}
+
 .lightbox {
   position: fixed;
   inset: 0;
@@ -477,6 +646,10 @@ h1 {
     grid-column: span 3;
   }
 
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+
   .lightbox-figure figcaption {
     border-top: 2px solid var(--line);
     border-left: 0;
@@ -519,6 +692,11 @@ h1 {
     height: 390px;
   }
 
+  .game-status-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
   .lightbox {
     padding: 12px;
   }
@@ -538,6 +716,11 @@ h1 {
   .hero-actions,
   .filter-bar {
     align-items: stretch;
+  }
+
+  .mode-toggle,
+  .scoreboard {
+    grid-template-columns: 1fr;
   }
 
   .art-open img,
