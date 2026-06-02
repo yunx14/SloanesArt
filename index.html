@@ -33,40 +33,7 @@
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="#gallery">View the gallery</a>
-            <button class="button secondary" type="button" data-open-feature>
-              Open featured art
-            </button>
           </div>
-        </div>
-
-        <div class="hero-art" aria-label="Featured artwork">
-          <figure class="featured-frame">
-            <img src="the_zoo.jpg" alt="Colorful drawing titled The Zoo">
-            <figcaption>
-              <span>The Zoo</span>
-              <small>Marker and imagination</small>
-            </figcaption>
-          </figure>
-          <div class="mini-gallery" aria-hidden="true">
-            <img src="panda_bear.jpg" alt="">
-            <img src="funny_pirate.jpg" alt="">
-            <img src="dog_with_collar.jpg" alt="">
-          </div>
-        </div>
-      </section>
-
-      <section class="collection-band" aria-label="Portfolio highlights">
-        <div class="highlight">
-          <strong>5</strong>
-          <span>favorite pieces</span>
-        </div>
-        <div class="highlight">
-          <strong>3</strong>
-          <span>art worlds</span>
-        </div>
-        <div class="highlight">
-          <strong>1</strong>
-          <span>proud young artist</span>
         </div>
       </section>
 
@@ -172,20 +139,27 @@
         <button class="icon-button close-button" type="button" data-close-lightbox aria-label="Close artwork viewer">
           <span aria-hidden="true">x</span>
         </button>
-        <button class="icon-button nav-button prev-button" type="button" data-prev-art aria-label="Previous artwork">
-          <span aria-hidden="true">&lt;</span>
-        </button>
         <figure class="lightbox-figure">
-          <img src="the_zoo.jpg" alt="" data-lightbox-image>
+          <div class="lightbox-stage">
+            <img src="the_zoo.jpg" alt="" data-lightbox-image>
+          </div>
           <figcaption>
             <p data-lightbox-category>Places</p>
             <h2 id="lightbox-title" data-lightbox-title>The Zoo</h2>
             <span data-lightbox-description>A full scene packed with energy, animals, and tiny discoveries.</span>
+            <div class="zoom-controls" aria-label="Artwork zoom controls">
+              <button class="icon-button" type="button" data-zoom-out aria-label="Zoom out">
+                <span aria-hidden="true">-</span>
+              </button>
+              <button class="zoom-reset" type="button" data-zoom-reset>
+                <span data-zoom-level>100%</span>
+              </button>
+              <button class="icon-button" type="button" data-zoom-in aria-label="Zoom in">
+                <span aria-hidden="true">+</span>
+              </button>
+            </div>
           </figcaption>
         </figure>
-        <button class="icon-button nav-button next-button" type="button" data-next-art aria-label="Next artwork">
-          <span aria-hidden="true">&gt;</span>
-        </button>
       </div>
     </div>
 

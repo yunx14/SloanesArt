@@ -44,12 +44,14 @@ const lightboxTitle = document.querySelector("[data-lightbox-title]");
 const lightboxCategory = document.querySelector("[data-lightbox-category]");
 const lightboxDescription = document.querySelector("[data-lightbox-description]");
 const openButtons = document.querySelectorAll("[data-art-index]");
-const openFeatureButton = document.querySelector("[data-open-feature]");
 const closeButton = document.querySelector("[data-close-lightbox]");
-const prevButton = document.querySelector("[data-prev-art]");
-const nextButton = document.querySelector("[data-next-art]");
+const zoomOutButton = document.querySelector("[data-zoom-out]");
+const zoomInButton = document.querySelector("[data-zoom-in]");
+const zoomResetButton = document.querySelector("[data-zoom-reset]");
+const zoomLevel = document.querySelector("[data-zoom-level]");
 
 let currentIndex = 4;
+let currentZoom = 1;
 let lastFocusedElement = null;
 
 function setFilter(filter) {
@@ -73,6 +75,15 @@ function renderLightbox(index) {
   lightboxTitle.textContent = artwork.title;
   lightboxCategory.textContent = artwork.category;
   lightboxDescription.textContent = artwork.description;
+  setZoom(1);
+}
+
+function setZoom(value) {
+  currentZoom = Math.min(Math.max(value, 0.6), 2.5);
+  lightboxImage.style.setProperty("--zoom-width", `${Math.round(currentZoom * 100)}%`);
+  zoomLevel.textContent = `${Math.round(currentZoom * 100)}%`;
+  zoomOutButton.disabled = currentZoom <= 0.6;
+  zoomInButton.disabled = currentZoom >= 2.5;
 }
 
 function openLightbox(index) {
@@ -94,11 +105,6 @@ function closeLightbox() {
   }
 }
 
-function showNextArtwork(direction) {
-  const nextIndex = (currentIndex + direction + artworks.length) % artworks.length;
-  renderLightbox(nextIndex);
-}
-
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => setFilter(button.dataset.filter));
 });
@@ -109,10 +115,10 @@ openButtons.forEach((button) => {
   });
 });
 
-openFeatureButton.addEventListener("click", () => openLightbox(4));
 closeButton.addEventListener("click", closeLightbox);
-prevButton.addEventListener("click", () => showNextArtwork(-1));
-nextButton.addEventListener("click", () => showNextArtwork(1));
+zoomOutButton.addEventListener("click", () => setZoom(currentZoom - 0.2));
+zoomInButton.addEventListener("click", () => setZoom(currentZoom + 0.2));
+zoomResetButton.addEventListener("click", () => setZoom(1));
 
 lightbox.addEventListener("click", (event) => {
   if (event.target === lightbox) {
@@ -129,11 +135,15 @@ document.addEventListener("keydown", (event) => {
     closeLightbox();
   }
 
-  if (event.key === "ArrowLeft") {
-    showNextArtwork(-1);
+  if (event.key === "-" || event.key === "_") {
+    setZoom(currentZoom - 0.2);
   }
 
-  if (event.key === "ArrowRight") {
-    showNextArtwork(1);
+  if (event.key === "+" || event.key === "=") {
+    setZoom(currentZoom + 0.2);
+  }
+
+  if (event.key === "0") {
+    setZoom(1);
   }
 });
