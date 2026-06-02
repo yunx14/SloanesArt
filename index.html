@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sloane's Art Studio</title>
+    <meta
+      name="description"
+      content="A cheerful portfolio of selected artwork by Sloane, age 6."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="#top" aria-label="Sloane's Art Studio home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Sloane's Art Studio</span>
+      </a>
+      <nav class="site-nav" aria-label="Portfolio navigation">
+        <a href="#gallery">Gallery</a>
+        <a href="#artist-note">Artist Note</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Selected works by an artist, age 6</p>
+          <h1 id="page-title">Sloane's Art Studio</h1>
+          <p class="intro">
+            A bright little gallery for sharing favorite drawings, creatures,
+            places, characters, and every new idea that makes it onto paper.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#gallery">View the gallery</a>
+            <button class="button secondary" type="button" data-open-feature>
+              Open featured art
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Featured artwork">
+          <figure class="featured-frame">
+            <img src="the_zoo.jpg" alt="Colorful drawing titled The Zoo">
+            <figcaption>
+              <span>The Zoo</span>
+              <small>Marker and imagination</small>
+            </figcaption>
+          </figure>
+          <div class="mini-gallery" aria-hidden="true">
+            <img src="panda_bear.jpg" alt="">
+            <img src="funny_pirate.jpg" alt="">
+            <img src="dog_with_collar.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="collection-band" aria-label="Portfolio highlights">
+        <div class="highlight">
+          <strong>5</strong>
+          <span>favorite pieces</span>
+        </div>
+        <div class="highlight">
+          <strong>3</strong>
+          <span>art worlds</span>
+        </div>
+        <div class="highlight">
+          <strong>1</strong>
+          <span>proud young artist</span>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio</p>
+          <h2 id="gallery-title">Selected Works</h2>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Filter artwork">
+          <button class="filter-button active" type="button" data-filter="all" role="tab" aria-selected="true">
+            All
+          </button>
+          <button class="filter-button" type="button" data-filter="animals" role="tab" aria-selected="false">
+            Animals
+          </button>
+          <button class="filter-button" type="button" data-filter="characters" role="tab" aria-selected="false">
+            Characters
+          </button>
+          <button class="filter-button" type="button" data-filter="places" role="tab" aria-selected="false">
+            Places
+          </button>
+        </div>
+
+        <div class="art-grid" aria-live="polite">
+          <article class="art-card" data-category="animals">
+            <button class="art-open" type="button" data-art-index="0" aria-label="Open Dog With Collar">
+              <img src="dog_with_collar.jpg" alt="Drawing of a dog wearing a collar">
+            </button>
+            <div class="art-details">
+              <p class="category">Animals</p>
+              <h3>Dog With Collar</h3>
+              <p>A loyal friend with a big personality and careful details.</p>
+            </div>
+          </article>
+
+          <article class="art-card tall" data-category="animals">
+            <button class="art-open" type="button" data-art-index="1" aria-label="Open Panda Bear">
+              <img src="panda_bear.jpg" alt="Drawing of a panda bear">
+            </button>
+            <div class="art-details">
+              <p class="category">Animals</p>
+              <h3>Panda Bear</h3>
+              <p>A sweet black-and-white character with a gentle expression.</p>
+            </div>
+          </article>
+
+          <article class="art-card" data-category="characters">
+            <button class="art-open" type="button" data-art-index="2" aria-label="Open Funny Pirate">
+              <img src="funny_pirate.jpg" alt="Drawing of a funny pirate">
+            </button>
+            <div class="art-details">
+              <p class="category">Characters</p>
+              <h3>Funny Pirate</h3>
+              <p>A playful character piece with costume, humor, and attitude.</p>
+            </div>
+          </article>
+
+          <article class="art-card wide" data-category="places">
+            <button class="art-open" type="button" data-art-index="3" aria-label="Open Gingerbread House">
+              <img src="gingerbread_house.jpg" alt="Drawing of a gingerbread house">
+            </button>
+            <div class="art-details">
+              <p class="category">Places</p>
+              <h3>Gingerbread House</h3>
+              <p>A cozy candy-world building with a storybook feeling.</p>
+            </div>
+          </article>
+
+          <article class="art-card wide" data-category="places">
+            <button class="art-open" type="button" data-art-index="4" aria-label="Open The Zoo">
+              <img src="the_zoo.jpg" alt="Colorful drawing of a zoo">
+            </button>
+            <div class="art-details">
+              <p class="category">Places</p>
+              <h3>The Zoo</h3>
+              <p>A full scene packed with energy, animals, and tiny discoveries.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="artist-note" id="artist-note" aria-labelledby="artist-note-title">
+        <div>
+          <p class="eyebrow">Artist Note</p>
+          <h2 id="artist-note-title">Made with color, curiosity, and confidence.</h2>
+        </div>
+        <p>
+          This portfolio is a place for Sloane to celebrate finished pieces,
+          talk about favorite details, and invite family and friends into the
+          worlds she is drawing.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Sloane's Art Studio</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true">
+      <div class="lightbox-panel">
+        <button class="icon-button close-button" type="button" data-close-lightbox aria-label="Close artwork viewer">
+          <span aria-hidden="true">x</span>
+        </button>
+        <button class="icon-button nav-button prev-button" type="button" data-prev-art aria-label="Previous artwork">
+          <span aria-hidden="true">&lt;</span>
+        </button>
+        <figure class="lightbox-figure">
+          <img src="the_zoo.jpg" alt="" data-lightbox-image>
+          <figcaption>
+            <p data-lightbox-category>Places</p>
+            <h2 id="lightbox-title" data-lightbox-title>The Zoo</h2>
+            <span data-lightbox-description>A full scene packed with energy, animals, and tiny discoveries.</span>
+          </figcaption>
+        </figure>
+        <button class="icon-button nav-button next-button" type="button" data-next-art aria-label="Next artwork">
+          <span aria-hidden="true">&gt;</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
