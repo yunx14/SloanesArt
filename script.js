@@ -14,6 +14,13 @@ const artworks = [
     description: "A sweet black-and-white character with a gentle expression."
   },
   {
+    title: "Pigeon",
+    category: "Animals",
+    image: "pigeon.jpg",
+    alt: "Paper collage of a blue pigeon on yellow paper",
+    description: "A bright paper collage with a bold shape and a funny sentence."
+  },
+  {
     title: "Funny Pirate",
     category: "Characters",
     image: "funny_pirate.jpg",
@@ -50,7 +57,7 @@ const zoomInButton = document.querySelector("[data-zoom-in]");
 const zoomResetButton = document.querySelector("[data-zoom-reset]");
 const zoomLevel = document.querySelector("[data-zoom-level]");
 
-let currentIndex = 4;
+let currentIndex = 5;
 let currentZoom = 1;
 let lastFocusedElement = null;
 
