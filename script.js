@@ -28,6 +28,13 @@ const artworks = [
     description: "A playful character piece with costume, humor, and attitude."
   },
   {
+    title: "Textured Cupcake",
+    category: "Food",
+    image: "textured_cupcake.jpg",
+    alt: "Textured cupcake craft with colorful tissue paper frosting",
+    description: "A bright cupcake craft with soft, layered frosting textures."
+  },
+  {
     title: "Gingerbread House",
     category: "Places",
     image: "gingerbread_house.jpg",
