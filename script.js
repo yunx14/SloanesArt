@@ -14,11 +14,25 @@ const artworks = [
     description: "A sweet black-and-white character with a gentle expression."
   },
   {
+    title: "Rainbow Cat",
+    category: "Animals",
+    image: "rainbow_cat.jpg",
+    alt: "Colorful drawing of an orange cat with a rainbow background",
+    description: "A glowing orange cat surrounded by bold bands of color."
+  },
+  {
     title: "Funny Pirate",
     category: "Characters",
     image: "funny_pirate.jpg",
     alt: "Drawing of a funny pirate",
     description: "A playful character piece with costume, humor, and attitude."
+  },
+  {
+    title: "Textured Cupcake",
+    category: "Food",
+    image: "textured_cupcake.jpg",
+    alt: "Textured cupcake craft with colorful tissue paper frosting",
+    description: "A bright cupcake craft with soft, layered frosting textures."
   },
   {
     title: "Gingerbread House",
@@ -50,7 +64,7 @@ const zoomInButton = document.querySelector("[data-zoom-in]");
 const zoomResetButton = document.querySelector("[data-zoom-reset]");
 const zoomLevel = document.querySelector("[data-zoom-level]");
 
-let currentIndex = 4;
+let currentIndex = 6;
 let currentZoom = 1;
 let lastFocusedElement = null;
 
