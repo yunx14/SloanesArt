@@ -21,11 +21,25 @@ const artworks = [
     description: "A bright paper collage with a bold shape and a funny sentence."
   },
   {
+    title: "Rainbow Cat",
+    category: "Animals",
+    image: "rainbow_cat.jpg",
+    alt: "Colorful drawing of an orange cat with a rainbow background",
+    description: "A glowing orange cat surrounded by bold bands of color."
+  },
+  {
     title: "Funny Pirate",
     category: "Characters",
     image: "funny_pirate.jpg",
     alt: "Drawing of a funny pirate",
     description: "A playful character piece with costume, humor, and attitude."
+  },
+  {
+    title: "Noura",
+    category: "Characters",
+    image: "noura.jpg",
+    alt: "Crayon portrait of Noura wearing a black dress",
+    description: "A bold portrait with warm colors and a confident black dress."
   },
   {
     title: "Textured Cupcake",
@@ -64,7 +78,7 @@ const zoomInButton = document.querySelector("[data-zoom-in]");
 const zoomResetButton = document.querySelector("[data-zoom-reset]");
 const zoomLevel = document.querySelector("[data-zoom-level]");
 
-let currentIndex = 5;
+let currentIndex = 8;
 let currentZoom = 1;
 let lastFocusedElement = null;
 
