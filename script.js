@@ -56,6 +56,70 @@ const artworks = [
     layout: "tall"
   },
   {
+    title: "Driving to Zoo",
+    category: "Stories",
+    image: "driving_to_Zoo.jpg",
+    alt: "Drawing of a family driving to the zoo",
+    description: "A family adventure scene on the way to the zoo.",
+    layout: "tall"
+  },
+  {
+    title: "Zoo Birthday",
+    category: "Stories",
+    image: "zoo_birthday.jpg",
+    alt: "Drawing of a zoo birthday with a giraffe and family",
+    description: "A birthday trip with a friendly giraffe and a happy crowd.",
+    layout: "tall"
+  },
+  {
+    title: "Bouncy House",
+    category: "Stories",
+    image: "bouncy_house.jpg",
+    alt: "Drawing of people playing in a bouncy house",
+    description: "A bright party scene full of movement and celebration.",
+    layout: "tall"
+  },
+  {
+    title: "Cake Time",
+    category: "Stories",
+    image: "Cake_time.jpg",
+    alt: "Drawing of people wearing party hats around cake",
+    description: "A party table moment with hats, cake, and excited guests.",
+    layout: "tall"
+  },
+  {
+    title: "Calvin's Present",
+    category: "Stories",
+    image: "Calvins_present.jpg",
+    alt: "Drawing of Calvin with a present",
+    description: "A special present moment from the birthday story.",
+    layout: "tall"
+  },
+  {
+    title: "Movie Night",
+    category: "Stories",
+    image: "Movie_Night.jpg",
+    alt: "Drawing of people sitting together for movie night",
+    description: "A cozy movie night scene with everyone gathered together.",
+    layout: "tall"
+  },
+  {
+    title: "Cleaning Up",
+    category: "Stories",
+    image: "Cleaning_up.jpg",
+    alt: "Drawing of people cleaning up after a party",
+    description: "A busy cleanup scene after the celebration winds down.",
+    layout: "tall"
+  },
+  {
+    title: "Best Birthday Ever",
+    category: "Stories",
+    image: "Best_Birthday_ever .jpg",
+    alt: "Drawing of a family at the end of a birthday story",
+    description: "A cheerful ending to a full birthday adventure.",
+    layout: "tall"
+  },
+  {
     title: "Gingerbread House",
     category: "Places",
     image: "gingerbread_house.jpg",
