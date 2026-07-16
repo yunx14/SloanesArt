@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Memory Match | Sloane's Art Studio</title>
+    <meta
+      name="description"
+      content="Play a two-player memory matching game on Sloane's Art Studio."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="game-page">
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="index.html" aria-label="Sloane's Art Studio home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Sloane's Art Studio</span>
+      </a>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="index.html#gallery">Gallery</a>
+        <a href="games.html">Games</a>
+        <a href="index.html#artist-note">Artist Note</a>
+      </nav>
+    </header>
+
+    <main class="game-shell">
+      <section class="game-board-section" aria-labelledby="game-title">
+        <div class="game-copy">
+          <p class="eyebrow">Play on the site</p>
+          <h1 id="game-title">Memory Match</h1>
+          <p class="intro">
+            Flip two cards, find a pair, and earn another turn. Play with a friend or take on the computer.
+          </p>
+        </div>
+
+        <div class="game-layout memory-layout">
+          <section class="game-panel" aria-label="Memory Match game board">
+            <div class="game-status-row">
+              <p class="turn-label" data-memory-status>Player 1's turn. Pick a card.</p>
+              <button class="button secondary compact-button" type="button" data-new-game>
+                New game
+              </button>
+            </div>
+
+            <div class="memory-board" role="grid" aria-label="Memory card board" data-memory-board></div>
+          </section>
+
+          <aside class="game-controls" aria-label="Memory Match controls">
+            <div>
+              <p class="control-label">Mode</p>
+              <div class="mode-toggle" role="tablist" aria-label="Choose game mode">
+                <button class="mode-button active" type="button" role="tab" aria-selected="true" data-memory-mode="friend">
+                  2 players
+                </button>
+                <button class="mode-button" type="button" role="tab" aria-selected="false" data-memory-mode="computer">
+                  vs computer
+                </button>
+              </div>
+            </div>
+
+            <div class="memory-scoreboard" aria-label="Match score">
+              <div class="memory-score-tile player-one">
+                <span data-player-one-label>Player 1</span>
+                <strong data-score-one>0</strong>
+              </div>
+              <div class="memory-score-tile player-two">
+                <span data-player-two-label>Player 2</span>
+                <strong data-score-two>0</strong>
+              </div>
+            </div>
+
+            <p class="memory-tip">A matching pair is worth one point and lets you go again.</p>
+
+            <a class="game-link-card" href="tictactoe.html">
+              <span class="game-link-icon" aria-hidden="true">#</span>
+              <span>
+                <strong>Play Tic Tac Toe</strong>
+                <small>Make three in a row</small>
+              </span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script src="memory.js"></script>
+  </body>
+</html>
