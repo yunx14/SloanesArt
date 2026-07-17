@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Connect 4 | Sloane's Art Studio</title>
+    <meta name="description" content="Play Connect 4 on Sloane's Art Studio.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="game-page">
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="index.html" aria-label="Sloane's Art Studio home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Sloane's Art Studio</span>
+      </a>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="index.html#gallery">Gallery</a>
+        <a href="games.html">Games</a>
+        <a href="index.html#artist-note">Artist Note</a>
+      </nav>
+    </header>
+
+    <main class="game-shell">
+      <section class="game-board-section" aria-labelledby="game-title">
+        <div class="game-copy">
+          <p class="eyebrow">Play on the site</p>
+          <h1 id="game-title">Connect 4</h1>
+          <p class="intro">Drop pieces into the board and be the first to make four in a row.</p>
+        </div>
+
+        <div class="game-layout connect-layout">
+          <section class="game-panel" aria-label="Connect 4 board">
+            <div class="game-status-row">
+              <p class="turn-label" data-connect-status>Red goes first.</p>
+              <button class="button secondary compact-button" type="button" data-connect-new-game>New game</button>
+            </div>
+            <div class="connect-board" role="grid" aria-label="Connect 4 board" data-connect-board></div>
+          </section>
+
+          <aside class="game-controls" aria-label="Connect 4 controls">
+            <div>
+              <p class="control-label">Mode</p>
+              <div class="mode-toggle" role="tablist" aria-label="Choose game mode">
+                <button class="mode-button active" type="button" role="tab" aria-selected="true" data-connect-mode="friend">2 players</button>
+                <button class="mode-button" type="button" role="tab" aria-selected="false" data-connect-mode="computer">vs computer</button>
+              </div>
+            </div>
+
+            <div class="connect-scoreboard" aria-label="Scoreboard">
+              <div class="connect-score-tile red-score"><span>Red</span><strong data-connect-red-score>0</strong></div>
+              <div class="connect-score-tile yellow-score"><span data-connect-yellow-label>Yellow</span><strong data-connect-yellow-score>0</strong></div>
+            </div>
+
+            <p class="memory-tip">Choose any column. Pieces fall to the lowest open spot.</p>
+            <button class="button primary full-button" type="button" data-connect-reset-score>Reset score</button>
+            <a class="game-link-card" href="games.html">
+              <span class="game-link-icon" aria-hidden="true">←</span>
+              <span><strong>More games</strong><small>Choose another game to play</small></span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <script src="connect4.js"></script>
+  </body>
+</html>

@@ -605,6 +605,11 @@ h1 {
   color: var(--rose);
 }
 
+.connect-choice .game-choice-art {
+  background: #f7e8c9;
+  color: #b92e51;
+}
+
 .game-choice-copy {
   display: grid;
   align-content: start;
@@ -742,6 +747,92 @@ h1 {
   color: var(--muted);
   font-size: 0.95rem;
   font-weight: 700;
+}
+
+.connect-board {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(36px, 1fr));
+  width: min(100%, 700px);
+  padding: clamp(6px, 1.2vw, 12px);
+  gap: clamp(4px, 0.8vw, 8px);
+  border: 2px solid var(--ink);
+  background: var(--teal);
+}
+
+.connect-slot {
+  display: grid;
+  min-width: 0;
+  aspect-ratio: 1;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.connect-slot span {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: #fff7e8;
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.connect-slot:not(:disabled):hover span,
+.connect-slot:not(:disabled):focus-visible span {
+  transform: scale(0.86);
+  background: #fbe0e7;
+}
+
+.connect-slot.red span {
+  background: var(--rose);
+}
+
+.connect-slot.yellow span {
+  background: var(--gold);
+}
+
+.connect-slot.winner span {
+  box-shadow: 0 0 0 4px #fff;
+}
+
+.connect-slot:disabled {
+  cursor: default;
+}
+
+.connect-scoreboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.connect-score-tile {
+  display: grid;
+  min-height: 106px;
+  place-items: center;
+  padding: 12px;
+  border: 2px solid var(--ink);
+  text-align: center;
+}
+
+.connect-score-tile span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.connect-score-tile strong {
+  font-size: 2.7rem;
+  line-height: 1;
+}
+
+.red-score {
+  background: #fbe0e7;
+}
+
+.yellow-score {
+  background: #f7e8c9;
 }
 
 .lightbox {
