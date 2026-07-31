@@ -1,5 +1,21 @@
 const artworks = [
   {
+    title: "Giraffe",
+    category: "Animals",
+    image: "giraffe.jpg",
+    alt: "Painting of a giraffe",
+    description: "A tall, graceful animal with a long neck and distinctive spots.",
+    layout: "tall"
+  },
+  {
+    title: "Whale",
+    category: "Animals",
+    image: "whale.jpg",
+    alt: "Painting of a whale",
+    description: "A majestic marine mammal with a gentle demeanor.",
+    layout: "tall"
+  },
+  {
     title: "Dog With Collar",
     category: "Animals",
     image: "dog_with_collar.jpg",
