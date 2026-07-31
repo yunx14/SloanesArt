@@ -2,7 +2,7 @@ const artworks = [
   {
     title: "Giraffe",
     category: "Animals",
-    image: "giraffe.jpg",
+    image: "images/giraffe.jpg",
     alt: "Painting of a giraffe",
     description: "A tall, graceful animal with a long neck and distinctive spots.",
     layout: "tall"
@@ -10,7 +10,7 @@ const artworks = [
   {
     title: "Whale",
     category: "Animals",
-    image: "whale.jpg",
+    image: "images/whale.jpg",
     alt: "Painting of a whale",
     description: "A majestic marine mammal with a gentle demeanor.",
     layout: "tall"
@@ -18,7 +18,7 @@ const artworks = [
   {
     title: "Dog With Collar",
     category: "Animals",
-    image: "dog_with_collar.jpg",
+    image: "images/dog_with_collar.jpg",
     alt: "Drawing of a dog wearing a collar",
     description: "A loyal friend with a big personality and careful details.",
     layout: "tall"
@@ -26,7 +26,7 @@ const artworks = [
   {
     title: "Panda Bear",
     category: "Animals",
-    image: "panda_bear.jpg",
+    image: "images/panda_bear.jpg",
     alt: "Drawing of a panda bear",
     description: "A sweet black-and-white character with a gentle expression.",
     layout: "tall"
@@ -34,7 +34,7 @@ const artworks = [
   {
     title: "Pigeon",
     category: "Animals",
-    image: "pigeon.jpg",
+    image: "images/pigeon.jpg",
     alt: "Paper collage of a blue pigeon on yellow paper",
     description: "A bright paper collage with a bold shape and a funny sentence.",
     layout: "tall"
@@ -42,7 +42,7 @@ const artworks = [
   {
     title: "Rainbow Cat",
     category: "Animals",
-    image: "rainbow_cat.jpg",
+    image: "images/rainbow_cat.jpg",
     alt: "Colorful drawing of an orange cat with a rainbow background",
     description: "A glowing orange cat surrounded by bold bands of color.",
     layout: "tall"
@@ -50,7 +50,7 @@ const artworks = [
   {
     title: "Funny Pirate",
     category: "Characters",
-    image: "funny_pirate.jpg",
+    image: "images/funny_pirate.jpg",
     alt: "Drawing of a funny pirate",
     description: "A playful character piece with costume, humor, and attitude.",
     layout: "tall"
@@ -58,7 +58,7 @@ const artworks = [
   {
     title: "Noura",
     category: "Characters",
-    image: "noura.jpg",
+    image: "images/noura.jpg",
     alt: "Crayon portrait of Noura wearing a black dress",
     description: "A bold portrait with warm colors and a confident black dress.",
     layout: "tall"
@@ -66,7 +66,7 @@ const artworks = [
   {
     title: "Textured Cupcake",
     category: "Food",
-    image: "textured_cupcake.jpg",
+    image: "images/textured_cupcake.jpg",
     alt: "Textured cupcake craft with colorful tissue paper frosting",
     description: "A bright cupcake craft with soft, layered frosting textures.",
     layout: "tall"
@@ -74,7 +74,7 @@ const artworks = [
   {
     title: "Driving to Zoo",
     category: "Stories",
-    image: "driving_to_Zoo.jpg",
+    image: "images/driving_to_Zoo.jpg",
     alt: "Drawing of a family driving to the zoo",
     description: "A family adventure scene on the way to the zoo.",
     layout: "tall"
@@ -82,7 +82,7 @@ const artworks = [
   {
     title: "Zoo Birthday",
     category: "Stories",
-    image: "zoo_birthday.jpg",
+    image: "images/zoo_birthday.jpg",
     alt: "Drawing of a zoo birthday with a giraffe and family",
     description: "A birthday trip with a friendly giraffe and a happy crowd.",
     layout: "tall"
@@ -90,7 +90,7 @@ const artworks = [
   {
     title: "Bouncy House",
     category: "Stories",
-    image: "bouncy_house.jpg",
+    image: "images/bouncy_house.jpg",
     alt: "Drawing of people playing in a bouncy house",
     description: "A bright party scene full of movement and celebration.",
     layout: "tall"
@@ -98,7 +98,7 @@ const artworks = [
   {
     title: "Cake Time",
     category: "Stories",
-    image: "Cake_time.jpg",
+    image: "images/Cake_time.jpg",
     alt: "Drawing of people wearing party hats around cake",
     description: "A party table moment with hats, cake, and excited guests.",
     layout: "tall"
@@ -106,7 +106,7 @@ const artworks = [
   {
     title: "Calvin's Present",
     category: "Stories",
-    image: "Calvins_present.jpg",
+    image: "images/Calvins_present.jpg",
     alt: "Drawing of Calvin with a present",
     description: "A special present moment from the birthday story.",
     layout: "tall"
@@ -114,7 +114,7 @@ const artworks = [
   {
     title: "Movie Night",
     category: "Stories",
-    image: "Movie_Night.jpg",
+    image: "images/Movie_Night.jpg",
     alt: "Drawing of people sitting together for movie night",
     description: "A cozy movie night scene with everyone gathered together.",
     layout: "tall"
@@ -122,7 +122,7 @@ const artworks = [
   {
     title: "Cleaning Up",
     category: "Stories",
-    image: "Cleaning_up.jpg",
+    image: "images/Cleaning_up.jpg",
     alt: "Drawing of people cleaning up after a party",
     description: "A busy cleanup scene after the celebration winds down.",
     layout: "tall"
@@ -130,7 +130,7 @@ const artworks = [
   {
     title: "Best Birthday Ever",
     category: "Stories",
-    image: "Best_Birthday_ever .jpg",
+    image: "images/Best_Birthday_ever .jpg",
     alt: "Drawing of a family at the end of a birthday story",
     description: "A cheerful ending to a full birthday adventure.",
     layout: "tall"
@@ -138,7 +138,7 @@ const artworks = [
   {
     title: "Gingerbread House",
     category: "Places",
-    image: "gingerbread_house.jpg",
+    image: "images/gingerbread_house.jpg",
     alt: "Drawing of a gingerbread house",
     description: "A cozy candy-world building with a storybook feeling.",
     layout: "tall"
@@ -146,7 +146,7 @@ const artworks = [
   {
     title: "The Zoo",
     category: "Places",
-    image: "the_zoo.jpg",
+    image: "images/the_zoo.jpg",
     alt: "Colorful drawing of a zoo",
     description: "A full scene packed with energy, animals, and tiny discoveries.",
     layout: "tall"
